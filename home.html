@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/dbf622422f.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Home | Cousins in Concert</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" 
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;
+        500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&
+        display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;
+        200;300;400;600;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <img class="Logo" src="Images/Logo2.png" width="285" height="120">
+            
+        </div>
+        <div class="NavContainer">
+            <nav>
+                <ul class="NavLinks">
+                    <li class="init"><a href="index.html">Welcome</a></li>
+                    <li class="init"><a href="home.html">Home</a></li>
+                    <li class="init"><a href="about.html">About Us</a></li>
+                    <li class="init"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="toggle_btn">
+                <i class="fa-sharp fa-solid fa-compass"></i>
+            </div>
+
+            <div class="dropdown_menu">
+                <li class="ddm"><a href="index.html">Welcome</a></li>
+                <li class="ddm"><a href="home.html">Home</a></li>
+                <li class="ddm"><a href="about.html">About Us</a></li>
+                <li class="ddm"><a href="contact.html">Contact</a></li>
+            </div>
+
+            <script>
+                const toggleBtn = document.querySelector('.toggle_btn')
+                const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                const dropDownMenu = document.querySelector('.dropdown_menu')
+
+                toggleBtn.onclick = function(){
+                    dropDownMenu.classList.toggle('open')
+                    const isOpen = dropDownMenu.classList.contains('open')
+
+                    toggleBtnIcon.classList = isOpen
+                        ? "fa-sharp fa-solid fa-xmark"
+                        : "fa-sharp fa-solid fa-compass"
+                }
+            </script>
+        </div>
+        <div class="HomeInfoBlock">
+            <h1>ABOUT THE PERFORMANCE</h1>
+            <h3>A Fusion of Culture</h3>
+            <p>This concert takes you through a carefully 
+                curated program of masterworks from the Western 
+                Classical  and Carnatic, (an Indian Classical art form) musical Canons but also 
+                Evergreen hits from the Bollywood Film Industry.
+                The program has been created with variety and 
+                exploration at it's core, and to celebrate not 
+                just one culture's music, but the tradition of 
+                the art form as a whole.</p>
+        </div>
+        <img src="Images/HomeBGImage.webp" id="imgHome">
+    </body>
+
+    <div class="footer" style="size:10%;">
+        <p id="email">cousinsinconcert@gmail.com</p>
+        <p>@2023 by Cousins In Concert.</p>
+    </div>
+</html>

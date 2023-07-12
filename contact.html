@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/dbf622422f.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Contact | Cousins in Concert</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" 
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;
+        500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&
+        display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;
+        200;300;400;600;800;900&display=swap" rel="stylesheet">
+        
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("6OiiLXiu0t2mKfHgN");
+   })();
+</script>
+        
+    </head>
+    <body>
+        <div class="header">
+            <img class="Logo" src="Images/Logo2.png" width="285" height="120">
+            
+        </div>
+        <div class="NavContainer">
+            <nav>
+                <ul class="NavLinks">
+                    <li class="init"><a href="index.html">Welcome</a></li>
+                    <li class="init"><a href="home.html">Home</a></li>
+                    <li class="init"><a href="about.html">About Us</a></li>
+                    <li class="init"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="toggle_btn">
+                <i class="fa-sharp fa-solid fa-compass"></i>
+            </div>
+
+            <div class="dropdown_menu">
+                <li class="ddm"><a href="index.html">Welcome</a></li>
+                <li class="ddm"><a href="home.html">Home</a></li>
+                <li class="ddm"><a href="about.html">About Us</a></li>
+                <li class="ddm"><a href="contact.html">Contact</a></li>
+            </div>
+
+            <script>
+                const toggleBtn = document.querySelector('.toggle_btn')
+                const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                const dropDownMenu = document.querySelector('.dropdown_menu')
+
+                toggleBtn.onclick = function(){
+                    dropDownMenu.classList.toggle('open')
+                    const isOpen = dropDownMenu.classList.contains('open')
+
+                    toggleBtnIcon.classList = isOpen
+                        ? "fa-sharp fa-solid fa-xmark"
+                        : "fa-sharp fa-solid fa-compass"
+                }
+            </script>
+        </div>
+        <div class="ContactWrapper">
+            <h4>CONTACT</h4>
+            <p>Have any questions?<br>
+                Contact us through the panel to the right,<br>
+                Or email us at<br>
+            </p>
+            <p id="ContactMail">cousinsinconcert@gmail.com</p>
+            <div class="FormWrapper">
+                <form class="ContactForm" id="form">
+                    <div class="InputRow">
+                        <div class="InputGroup">
+                            <label>Name*</label><br>
+                            <input type="text" placeholder="Enter your Name" id="name" required>
+                        </div>
+                        <div class="InputGroup">
+                            <label>Email*</label><br>
+                            <input type="text" placeholder="Enter your Email" id="emailfield" required>
+                        </div>
+                        <div class="InputGroup">
+                            <label>Subject</label><br>
+                            <input type="text" placeholder="Type the subject" id="subject">
+                        </div>
+                        <div class="InputGroup">
+                            <label>Message</label><br>
+                            <textarea rows="9" placeholder="Type your message here..." id="message"></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+       <div class="GoogleMap">
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6965.322875868673!2d-85.93675540049281!3d38.33281220916832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886942007efea123%3A0xe8e9882b644699b7!2sFloyd%20Central%20Theatre!5e0!3m2!1sen!2sus!4v1686612262542!5m2!1sen!2sus" width="1512" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+       </div>  
+    </body>
+
+    <script>
+        var form= document.getElementById('form');
+        var params;
+
+        form.addEventListener('submit', function(event){
+            event.preventDefault();
+
+            var Name = document.getElementById('name').value;
+            var Email = document.getElementById('emailfield').value;
+            var Subject = document.getElementById('subject').value;
+            var Message = document.getElementById('message').value;
+
+            console.log(Name, Email, Subject, Message);
+            function sendMail(){
+                params = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('emailfield').value,
+                    subject: document.getElementById('subject').value,
+                    message: document.getElementById('message').value,
+                };
+            }
+
+            const serviceID = "service_ykluz69";
+            const templateID = "template_kxpeaii";
+
+            emailjs.send("service_ykluz69","template_kxpeaii",{
+                subject: document.getElementById('subject').value,
+                name: document.getElementById('name').value,
+                email: document.getElementById('emailfield').value,
+                message: document.getElementById('message').value,
+                });
+
+            form.reset();
+            alert("Form was submitted successfully!")
+        })
+    </script>
+
+    <div class="footer">
+        <p id="email">cousinsinconcert@gmail.com</p>
+        <p>@2023 by Cousins In Concert.</p>
+    </div>
+</html>
+
+<script>
+    Mythos.document.getElementById.sudo()
+</script>

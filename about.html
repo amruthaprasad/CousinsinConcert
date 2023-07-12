@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/dbf622422f.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Home | Cousins in Concert</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" 
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;
+        500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&
+        display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;
+        200;300;400;600;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <img class="Logo" src="Images/Logo2.png" width="285" height="120">
+            
+        </div>
+        <div class="NavContainer">
+            <nav>
+                <ul class="NavLinks">
+                    <li class="init"><a href="index.html">Welcome</a></li>
+                    <li class="init"><a href="home.html">Home</a></li>
+                    <li class="init"><a href="about.html">About Us</a></li>
+                    <li class="init"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="toggle_btn">
+                <i class="fa-sharp fa-solid fa-compass"></i>
+            </div>
+
+            <div class="dropdown_menu">
+                <li class="ddm"><a href="index.html">Welcome</a></li>
+                <li class="ddm"><a href="home.html">Home</a></li>
+                <li class="ddm"><a href="about.html">About Us</a></li>
+                <li class="ddm"><a href="contact.html">Contact</a></li>
+            </div>
+
+            <script>
+                const toggleBtn = document.querySelector('.toggle_btn')
+                const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                const dropDownMenu = document.querySelector('.dropdown_menu')
+
+                toggleBtn.onclick = function(){
+                    dropDownMenu.classList.toggle('open')
+                    const isOpen = dropDownMenu.classList.contains('open')
+
+                    toggleBtnIcon.classList = isOpen
+                        ? "fa-sharp fa-solid fa-xmark"
+                        : "fa-sharp fa-solid fa-compass"
+                }
+            </script>
+        </div>
+        <div class="AboutTitleBlock">
+            <h1>About Us</h1>
+            <h6>Meet the Team</h6>
+        </div>
+        <img src="Images/Floyd-Central-9.jpeg" width="1512" height="343" style="object-fit: cover; max-width: 100%;">
+        <div class="AboutInfoBlock">
+                <h1>Srikar Vaasan</h1>
+                <h4>Violinist, Pianist, Carnatic Flautist, Carnatic Vocalist</h4>
+                <p>Srikar Vaasan is currently a rising senior at Floyd Central High School in Floyds Knobs, Indiana. Since beginning to learn piano at the age of three, Srikar has had the wonderful opportunities to learn from his previous teacher Mrs. Joy Cofield and to then continue his studies under his current teacher Mrs. Jessica Dorman. Srikar has competed in both the Music Teachers National Association Composition Contest and the National Pianists Guild Composition Contest, the latter of which he recently won a special award in. Throughout his middle and high school years, Srikar has participated in Indiana State School Music Association (ISSMA) contests for both solos and ensembles in both piano and violin, another instrument he plays and studies under Mrs. Helen Bohannon. Serving as concertmaster of the Floyd Central Symphony Orchestra under the direction of Mr. Doug Elmore, Srikar has continued to participate in various projects with many groups, including the Floyd County Youth Symphony's Philharmonic Orchestra and the Indiana High School All State Orchestra. Srikar also participates extensively in Indian classical music, playing the Indian flute and singing in the style for numerous years. He currently learns from Mrs. Pusthakam Ramaa for voice, previously learning from Mrs. Rajalakshmi Gopal Iyengar, and also Carnatic flute from Mr. Jayaram Kikkeri. Just like with Western classical music, Srikar also plays and sings Indian classical music extensively in numerous festivals and places. He is always interested in integrating interesting ideas and musical concepts from cultures around the world. Srikar hopes to continue his exploration and musical journey in the future, wherever it takes him.</p>
+
+
+                <h1>Maitreyi Narakesari</h1>
+                <h4>Carnatic Vocalist</h4>
+                <p>Maithreyi’s early induction into 
+                    the world of Carnatic happened 
+                    with her parents at the age of 2,
+                     when she started singing snippets 
+                     of Carnatic music and was able to 
+                     distinguish between 5 ragas by the 
+                     age of 4. This early exposure into 
+                     the rich melodies of Carnatic music 
+                     laid a strong foundation for her future
+                    musical endeavors. The subsequent 
+                    primary stint in Isha Home School 
+                    opened up further opportunities for 
+                    her to learn other flavors of Indian 
+                    music, including North Indian abhangs 
+                    and songs in a variety of other languages.
+                    She was fortunate to get an opportunity to
+                    perform in 2014 at the Mahashivaratri 
+                    program in front of a live international 
+                    audience of 75000+ people. Parallel to her
+                    musical pursuits, Maithreyi also delved 
+                    into the realm of Bharatanatyam, a 
+                    classical Indian dance form. In the 
+                    following five years, she completed 
+                    the Karnataka junior board exam for both
+                    music and dance. With her recent transition
+                    to Atlanta, Maithreyi has embarked on a new 
+                    chapter in her musical journey. She has humbly 
+                    begun to explore the fascinating parallels 
+                    between Carnatic and western classical music, 
+                    seeking to find links between the two.</p>
+
+                <h1>Jithanth Vainatheya</h1>
+                <h4>Pianist</h4>
+                <p>Jithanth's musical journey began in The Hague, Netherlands, where he had singing and recorder lessons. In the United Kingdom, at the age of 5, he had his first piano lesson in a church group. The experience introduced him to reading, writing, and playing music, and the enchanting sound of the Organ left a lasting impact. It was during this time that Jithanth discovered the music of Beethoven, which ignited his love for Western Classical Music, a passion that never left him. <br><br>
+                    ​
+                    Upon returning to India, Jithanth faced limited musical opportunities at school, but he continued his lessons until the pandemic disrupted them. Despite a waning interest in piano, Jithanth found renewed motivation in the freedom from strict curricula. He focused on learning the pieces that resonated with him and delved into the expressive and narrative aspects of music. He also took every opportunity he could get to perform at school or elsewhere.<br><br>
+                    ​
+                    Inspired by his shared love for Classic Rock with friends, Jithanth formed a band and embarked on a musical journey. Together, they organized a music festival at school, aiming to foster a love for all genres of music. Throughout this journey, the music of Beethoven remained a profound influence on Jithanth, solidifying his admiration for not only western classical music but music as a whole.<br><br>
+                     
+                    Recently, Jithanth has reignited his passion for music and resumed lessons with newfound vigor and enthusiasm. This revival of his musical pursuits is a testament to his unwavering love for the craft. Jithanth's journey continues to evolve, paving the way for further exploration and growth as he seeks to fulfill his artistic aspirations.</p>
+
+                <h1>Manasi Prasad</h1>
+                <h4>Violinist, Pianist, Western Classical Vocalist</h4>
+                <p>Manasi Prasad is a rising sophomore at John T. Hoggard High School in Wilmington, North Carolina. From a young age, she has expressed her love and affinity towards music. Her musical journey began in Eaton Elementary with her well-loved music teacher Mrs. Kanzler. There, she sang in choirs and learned how to play the recorder and ukelele. Since learning basic notes, she has adventurured further into the world of music. She started learning piano with Mrs. Martha Hayes in the middle of her 
+                    6th grade year after studying keyboard for a year in India. In addition to performing in numerous recitals, she has participated in the CFMTA and North Carolina State Music Festival for many years and recently earned to opportunitity to perform at Meridith College as part of earning highest honors in the local festival. She enjoys playing the piano at any opportunity and plays in many local groups, such as WYSO's Rockestra and Jazz Chamber Group. Soon after beginning piano lessons, Manasi 
+                    began to take voice lessons with Mrs. Sara Westermark. She has always loved to sing, and sings in the Girl's Choir of Wilmington and in Thalian Association theater productions whenever she can. With her singing skils, she has been cast in James and the Giant Peach, as Grimhide the Evil Queen in December, as Morticia in the Addams Family, and as Viginia Wolf in Cry Wolf! Manasi also competed in the National Association of Teachers of Singing (NATS) competition, and advanced to the mid-atlantic 
+                    regional level. Voice and piano was not enough for her as in the middle of her seventh grade year, she began violin lessons with Mrs. Shirley Lebo. She currently take lessons with acclaimed professor Dr. Danjela Zeze Gualdi (change and correct spelling) and enjoys it immensely. She as served as concermaster for her school orchestra and co-concertmaster for the Eastern Regional String Orchestra. She was accepted into ERO and participated in her local All-County event. Additionally, she has recieved 
+                    highest honors in her chamber group, solo, and orchestra at MPA and Solo and Ensemble Festical. Never wanting to put down her instrument, Manasi plays first violin in the Wilmington Symphony Youth Orchestra (WSYO) and in many affiliated chamber groups. With the help of her friends, she has created and leads a local gigging group, the Coastal Cadenzas. She has competed in the UNCW-Sponsores Richard Deas Concerto Competition for two consecutive years, playing a Seitz concerto on violin, and the 
+                    Grieg piano concerto on piano. Manasi has just completed three weeks of a pre-professional music program at Appalachian State University.
+                </p>
+
+            </div>
+        </div>
+    </body>
+
+    <div class="footer">
+        <p id="email">cousinsinconcert@gmail.com</p>
+        <p>@2023 by Cousins In Concert.</p>
+    </div>
+</html>
